@@ -1,0 +1,32 @@
+body{
+    border: solid gold 4px;
+}
+
+.cart{
+    border: 2px solid green;
+    width: 70%;
+    display: grid;
+    position: relative;
+    left: 15%;
+}
+
+
+.your-accounte{
+    
+   
+    height: auto;
+    border: solid 2px rebeccapurple;
+}
+form div{
+   border: 2px black solid;
+}
+
+form{
+    display: grid;
+    border: solid red 3px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-column:100px;
+    grid-row:100px;
+
+}
