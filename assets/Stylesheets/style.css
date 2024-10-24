@@ -310,6 +310,7 @@ footer {
 .sous-footer p {
     margin-top: 10px;
     margin-bottom: 5px;
+    margin-left: 500px;
 }
 
 .sous-footer button {
@@ -320,6 +321,7 @@ footer {
     font-size: 1rem;
     color: #333;
     margin-right: 20px;
+    margin-left: 550px;
     cursor: pointer;
 }
 
