@@ -74,7 +74,7 @@ body {
 .share .fi {
   width: 30px;
   height: 30px;
- font-size: 30px;
+ font-size: px;
  color: var(--primaryColor);
 }
 
