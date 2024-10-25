@@ -1,3 +1,143 @@
-*{
-    BOX
+* {
+  padding: auto;
+  margin: auto;
 }
+body {
+  box-sizing: border-box;
+  height: auto;
+  width: 1300px;
+}
+
+nav {
+  border: 8px red solid;
+  height: 100px;
+}
+.nav-container {
+  border: 8px red solid;
+  display: flex;
+}
+nav img {
+  width: 12px;
+  height: 12px;
+}
+
+/* section */
+
+.container-section {
+  background-color: aquamarine;
+  display: grid;
+  width: auto;
+  height: 1060px;
+  gap: 100px;
+}
+.container-carte img {
+  position: relative;
+  left: 10%;
+  top: 2%;
+  border-radius: 50%;
+  width: 170px;
+  height: 170px;
+}
+.title-section {
+  position: relative;
+  top: 15px;
+  text-align: center;
+  border: 2px gold solid;
+  width: 800px;
+}
+.container-carte {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  bottom: 0%;
+  width: 90%;
+  row-gap: 50px;
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+
+  column-gap: 17.6%;
+  border: 5px rgb(48, 20, 230) solid;
+}
+.cart {
+  margin-left: 21%;
+  margin-bottom: 70%;
+}
+.cart p{
+    position: relative;
+    top: 60px;
+    text-align: center;
+    left: 1%;
+}
+.cart h3{
+    position: relative;
+    top: 20px;
+    text-align: center;
+    left: 1%;
+}
+hr{
+  height: 0px;
+  width: 90%;
+  border-radius: 200PX;
+  border: solid rgb(0, 0, 0) 1px;
+  position: relative;
+  top: 30PX;
+}
+.container-section .cart {
+    border-radius: 12px;
+  border: 5px rgb(48, 241, 18) solid;
+  background-color: beige;
+  height: 350px;
+  width: 210px;
+}
+
+h2 {
+  position: relative;
+  left: 8%;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+
+.container-supportion{
+    width: 80%;
+    border: red solid 2px;
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px ;
+    position: relative;
+    bottom: 50%;
+
+   
+}
+.container-supportion div{
+    border: solid 2px rgb(255, 0, 238);
+}
+
+.container-supportion h2{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    border: 2px solid rgb(212, 194, 0);
+    
+}
+.cart-companies{
+    margin-left: 40px;
+    border: green solid 2px; 
+    
+}
+.cart-companies img{
+    border: rgb(212, 194, 0) solid 5px;
+    width: 200px;
+
+}
+.logo-2{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.logo-2 img{
+    
+    margin: 70px 0px 70px 50px;
+    border-radius: 40px;
+    background-color: blanchedalmond;
+    
+}
+

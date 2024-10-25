@@ -1,0 +1,130 @@
+:root{
+  --primaryColor : #0A66C2 ;
+  --secondColor : #FFFFFF ;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container{
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+}
+header{
+  width:100%;
+  height: 72px;
+  text-align: center;
+  align-items: center;
+  background-color: var(--primaryColor);
+}
+.container .All{
+  display: grid;
+  gap: 40px;
+grid-template-rows: 1fr auto ;
+}
+.container .personal-info{
+  display : grid ;
+  border : 1px solid red ;
+  margin-top: 15px;
+  grid-template-columns:auto 1fr;
+}
+.container .personal-info .info{
+  display : grid ;
+  background-color: aqua;
+  grid-template-columns: 1fr auto;
+  grid-column: 2 span;
+  padding: 20px;
+  gap: 20px;
+}
+.container .personal-info .slakAjmi{
+  display : grid ;
+  background-color: aqua;
+  grid-template-columns: 20% 80%;
+  height: 80vh;
+}
+
+.container .personal-info .info .info-pic-name{
+  display : grid ;
+  grid-template-columns: auto 1fr auto;
+  width: fit-content;
+  border: 1px solid rgb(110, 100, 100);
+  column-gap: 20px;
+  /* grid-template-columns: 1fr 1fr auto ;   */
+  align-items: center;
+}
+.container .personal-info .info .info-pic-name img{
+   border-radius: 50%;
+   width: 100px;
+}
+.container .personal-info .info .info-pic-name .user p , i{
+ display:inline-block;
+ padding-top: 10px;
+}
+.container .personal-info .info .info-shar{
+  border : 1px solid darkblue ;
+  width: fit-content;
+}
+.container .personal-info .lang-edu{
+  background-color: rgb(241, 241, 43);
+  padding: 10px;
+  display: grid;
+}
+.container .personal-info .libiti{
+  display: grid;
+  grid-template-rows: 20% 50% 30% ;
+  height: 80vh;
+}
+.container .personal-info .status{
+  background-color: rgb(41, 170, 116);
+}
+.container .personal-info .portfolio .likan{
+  padding-top: 20px;
+  padding-left: 20px;
+  background-color: rgb(103, 207, 214);
+  display: grid;
+  grid-template-columns: 1fr 1fr  ;
+}
+.container .personal-info .portfolio .likan div  {
+  width: 400px;
+  height: 200px;
+  padding-left: 10px;
+}
+.container .personal-info .portfolio .likan div a  {
+      display: block; 
+      text-align: center;
+      padding-top: 10px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+.container .personal-info .portfolio .likan div  img {
+  width: 100%;
+  height: 100%;
+}
+
+.container .personal-info .skills{
+  
+  background-color: rgb(241, 178, 233);
+  /* text-align: center; */
+  padding: 10px 40px;
+}
+.container .personal-info .skills button {
+  background-color: #0A66C2;
+  padding: 10px 60px;
+  border-radius: 5px;
+}
+
+.container .Certification{
+  display : grid ;
+  border : 1px solid green ;
+  margin-bottom: 15px;
+}
+footer{
+  height: 72px;
+  align-items: center;
+  text-align: center;
+  background-color: var(--primaryColor);
+}
