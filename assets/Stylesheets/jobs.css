@@ -82,11 +82,13 @@
     background-color: rgb(200, 191, 191);
     border: none;
     
+    
 }
 
 .line {
     height: 20px;
     border: 0.2px solid black;
+    margin-right:2px ;
 }
 
 .s-input-2 {
@@ -327,6 +329,13 @@ footer {
         padding-right: 0px;
         border-radius: 30px;
     }
+    button{
+        font-size: 2px;
+        padding-inline: 4px;
+    }
+
+
+
 
 
     .jobs-frame {
@@ -362,6 +371,16 @@ footer {
     .desc-father {
         padding: 66px 0px 0px 0px;
     }
+    .searchbar {
+        display: inline-flex;
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 5px;
+        background-color: rgb(200, 191, 191);
+    }
+    /* .s-input-2 {
+        display: none;
+    } */
 
 
 

@@ -1,127 +1,263 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="../assets/Stylesheets/Profil.css">
-  <link rel="stylesheet" href="../assets/Stylesheets/all.css">
-  <link rel="stylesheet" href="../assets/Stylesheets/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCareer-Profile</title>
+    <link rel="stylesheet" href="../assets/Stylesheets/style.css">
+    <link rel="stylesheet" href="../assets/Stylesheets/Profil.css">
+    <link rel="stylesheet" href="../assets/Stylesheets/all.min.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css'>
 </head>
 <body>
-  <header>
-     
-       <div class="container">
-        waiting Nav from keltom 
-       </div>
+    <header>
+        <nav class="navbar">
+          <a href="#" class="logo">
+            <img src="../assets/images/CodeCareer Black (1).png" alt="Logo">
+          </a>
       
-  </header>
-  <section classs="Profil" id="Pro">
-    <div class="container">
-      <div class="All">
-        <div class="personal-info">
-     <div class="info">
-                <div class="info-pic-name">
-                    <img src="../assets/images/profil-info.jpg" alt="pic-profil" >
-                    <div class="user">
-                      <div id="name">
-                      <p>Ahmed Ali</p>
-                      <i  class="fa-solid fa-arrow-down"></i>
-                      </div> 
-                      <div id="city">
-                        <i  class="fa-solid fa-arrow-down"></i>
-                        <p>Youssoufia ,Marrakech</p>
+          <ul class="nav-items">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./company.html">Companies</a></li>
+            <li><a href="./jobs.html">Jobs</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+      
+          <div class="profil">
+            <a href="./Profil.html">
+              <img src="../assets/images/Icons/Profil.png" alt="Profile Icon">
+            </a>
+            <a href="pages/sign-up-in.html" class="sign-in">Sign in</a>
+          </div>
+      
+          <!-- Burger Menu Icon -->
+           <div class="menu">
+             <i class="fa-solid fa-bars " id="burgerMenu"></i>
+           </div>  
+           <div class="mobile-list" id="mobileList">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./company.html">Companies</a></li>
+                <li><a href="./jobs.html">Jobs</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./Profil.html">Profil</a></li>
+                <li><a href="pages/sign-up-in.html" class="sign-in">Sign in</a> </li>
+              </ul>
+           </div>
+        </nav>
+      </header>
+  <section>
+  <div class="profile-wrapper">
+      <div class="profile-container">
+          <!-- Profile Header -->
+          <div class="profile-header">
+              <img src="../assets/images/ismail.png" alt="Profile Picture" class="profile-pic">
+              <div class="profile-details">
+                  <h1>Dilali Ismail</h1>
+                  <p class="job-title">Full Stack Developer</p>
+                  <div class="location-rate">
+                      <span>Marrakech , Morroco</span>
+                      <div class="icons local">
+                        <i class="fi fi-ts-marker"></i>
                       </div>
-                    
-                      </div> 
-                </div>
-                <div class="info-shar">
-                  <i class="fa-solid fa-arrow-down"></i>
-                  <p>share</p> 
-                  <i class="fa-solid fa-arrow-down"></i>
-                </div>
-     </div>
-     <div>
-     <div class="slakAjmi">
-  <div class="lang-edu">
-      <div class="Lang">
-       <h2>Languages</h2>
-       <p>English :  Native</p>
-       <p>French : Conversational</p>
-       <p>Arabic:   Fluent</p>
-     </div> 
-     <div class="education">
-      <h2>education</h2>
-      <p>Youcode</p>
-      <p>web development</p>
-    </div> 
-    <div class="link-account">
-      <h2>Linked accounts </h2>
-      <p>Github</p>
-      <p>Ahmed ali</p>
-      <a href="">  <i class="fa-solid fa-arrow-down"></i> view profil </a>
-    </div> 
-      </div>
-      <div class="libiti">
-         <div class="status">
-        <h2>Full stack Web Developer</h2>
-        <p>
-          Greetings! I'm Ahmed Ali  , a dynamic and results-driven Front-End Web   Developer with a passion for crafting visually stunning and highly functional websites.
-           With a solid three years of hands-on experience, I specialize in turning concepts into captivating user interfaces.
-        </p>
-      </div>
-      <div class="portfolio">
-        <h2>Portfolio</h2>
-        <div class="likan">
-          <div class="portfolio1">
-            <img src="../assets/images/portfolio1.jpg" alt="port1" >
-            <a  href="#">David</a>
+                  </div>
+                  <div class="job-success">
+                      <p>Job Success: <strong>95%</strong> | <strong>5.0</strong> (200 reviews)</p>
+                  </div>
+              </div>
+              <div class="header-options icons share">
+               <a href="#"><i class="fi fi-ts-screen-share"></i></a> 
+              </div>
           </div>
-          <div class="portfolio2">
-            <div>
-              <img src="../assets/images/portfolio2.jpg" alt="port2" >
+  
+          <!-- Left Column: Languages, Education, Linked Accounts -->
+          <div class="sidebar-left">
+              <div class="languages">
+                  <h2>Languages</h2>
+                  <ul>
+                      <li>English: Fluent</li>
+                      <li>French : Conversational</li>
+                      <li>Spanish: Intermediate</li>
+                  </ul>
+              </div>
+  
+              <div class="education">
+                  <h2>Education</h2>
+                  <ul>
+                      <li> Stanford University (2015 - 2019)</li>
+                      <li> Youcode (2020 - 2022)</li>
+                  </ul>
+              </div>
+  
+              <div class="linked-accounts">
+                  <h2>Linked Accounts</h2>
+                  <ul>
+                      <li>LinkedIn: <a href="#">john-linkedin</a></li>
+                      <li>GitHub: <a href="#">john-github</a></li>
+                      <li>Twitter: <a href="#">@john_dev</a></li>
+                  </ul>
+              </div>
+          </div>
+  
+          <!-- Main Content: Description, Portfolio, Skills -->
+          <div class="main-content">
+              <div class="description">
+                  <h2>Description</h2>
+                  <p>
+                      I am a passionate full stack developer with over 5 years of experience in building web applications.
+                      My expertise lies in front-end technologies like React and back-end technologies such as Node.js.
+                      I am dedicated to delivering high-quality software solutions that meet client requirements.
+                  </p>
+              </div>
+  
+              <div class="portfolio">
+                <h2>Portfolio</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="../assets/images/ecomerce.jpg" alt="E-Commerce Website" class="portfolio-image">
+                        <h3>E-Commerce Website</h3>
+                        <p>Developed a fully functional e-commerce platform using React and Node.js.</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="../assets/images/Data-analysis.jpg" alt="Data Analysis Dashboard" class="portfolio-image">
+                        <h3>Data Analysis Dashboard</h3>
+                        <p>Created a Python-based dashboard for analyzing and visualizing complex datasets.</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="../assets/images/portfolio-blog.webp" alt="Personal Blog" class="portfolio-image">
+                        <h3>Personal Blog</h3>
+                        <p>Designed and developed a personal blog platform using WordPress.</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="../assets/images/portfolio-port.jpg" alt="Portfolio Website" class="portfolio-image">
+                        <h3>Portfolio Website</h3>
+                        <p>Built a responsive portfolio website to showcase my work and skills.</p>
+                    </div>
+                </div>
             </div>
-            <a href="#">Wegrow</a>
+            
+  
+              <div class="skills">
+                  <h2>Skills</h2>
+                  <div class="skill-list">
+                      <div class="skill-item">
+                          <span>HTML</span>
+                          <div class="skill-bar" style="width: 90%;"></div>
+                      </div>
+                      <div class="skill-item">
+                          <span>CSS</span>
+                          <div class="skill-bar" style="width: 85%;"></div>
+                      </div>
+                      <div class="skill-item">
+                          <span>JavaScript</span>
+                          <div class="skill-bar" style="width: 80%;"></div>
+                      </div>
+                      <div class="skill-item">
+                          <span>React</span>
+                          <div class="skill-bar" style="width: 75%;"></div>
+                      </div>
+                      <div class="skill-item">
+                          <span>Node.js</span>
+                          <div class="skill-bar" style="width: 70%;"></div>
+                      </div>
+                      <div class="skill-item">
+                          <span>Python</span>
+                          <div class="skill-bar" style="width: 60%;"></div>
+                      </div>
+                  </div>
+              </div>
           </div>
-        </div>
-       
       </div>
-      <div  class="skills">
-       <h2 style="padding-bottom: 40px;">Skills</h2>
-       <div class="all-skills">
-              <button>HTML</button>
-              <button>CSS</button>
-              <button>JS</button>
-              <button>PHP</button>
-              <button>Laravel</button>
-              <button>SQL</button>
-              <button>Figma</button>
-              <button>React-Js</button>
-       </div>
+  
+      <!-- Certifications Section Outside Profile Container -->
+      <div class="certifications">
+          <h2>Certifications</h2>
+          <div class="certification-item">
+              <img src="../assets/images/certif-google.png" alt="Google Cloud Certified" class="certification-logo">
+              <div class="certification-details">
+                  <h3>Google Cloud Certified</h3>
+                  <p>Issued by Google on January 2023</p>
+                  <p class="certification-description">Demonstrated proficiency in Google Cloud technologies and best practices.</p>
+              </div>
+          </div>
+          <div class="certification-item">
+              <img src="../assets/images/certif-aws.png" alt="AWS Developer" class="certification-logo">
+              <div class="certification-details">
+                  <h3>AWS Developer</h3>
+                  <p>Issued by Amazon Web Services on March 2022</p>
+                  <p class="certification-description">Validated skills in developing applications on AWS.</p>
+              </div>
+          </div>
+          <div class="certification-item">
+              <img src="../assets/images/microsoft_logo.jpeg" alt="Scrum Master Certified" class="certification-logo">
+              <div class="certification-details">
+                  <h3>Microsoft Certified: Azure Fundamentals</h3>
+                  <p>Issued by Microsoft on June 2021</p>
+                  <p class="certification-description">Demonstrated proficiency in Microsoft </p>
+              </div>
+          </div>
       </div>
+  </div>  
+  </section>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Categories</h3>
+        <ul>
+          <li><a href="#">Graphics & Design</a></li>
+          <li><a href="#">Digital Marketing</a></li>
+          <li><a href="#">Writing & Translation</a></li>
+          <li><a href="#">Video & Animation</a></li>
+        </ul>
       </div>
-     </div>
-   
-      </div>  
-       
+  
+      <div class="footer-section">
+        <h3>About</h3>
+        <ul>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press & News</a></li>
+          <li><a href="#">Partnerships</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
       </div>
-    
-      <div class="Certification">
-        <div clas="certif1">
-           <img src="../assets/images/oracl.png" alt="Oracl-certif" width="100px">
-           <h4>Certified Java Developer (Oracle Certified Professional)</h4>
-        </div>
-        <div clas="certif2">
-            <img src="../assets/images/AWS.webp" alt="Aws-certif" width="100px">
-            <h4>AWS Certified Solutions Architect</h4>
+  
+      <div class="footer-section">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="#">Help & Support</a></li>
+          <li><a href="#">Trust & Safety</a></li>
+          <li><a href="#">Selling on Fiverr</a></li>
+          <li><a href="#">Buying on Fiverr</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+            <a href="#"><img src="../assets/images/Icons/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="../assets/images/Icons/x.png" alt="Twitter"></a>
+            <a href="#"><img src="../assets/images/Icons/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="../assets/images/Icons/linkedin.png" alt="LinkedIn"></a>
         </div>
       </div>
     </div>
-  </section>
-  <footer>
-           <div class="container">
-            wainting footer from Keltom 
-           </div>
+  
+    <div class="footer-bottom">
+      <p>© 2024 Your Company. All rights reserved.</p>
+    </div>
   </footer>
-</body>
+  <script>
+    // js code for toglling 
+    const burgerMenu = document.getElementById('burgerMenu');
+    const mobileList = document.getElementById('mobileList');
+  
+    burgerMenu.addEventListener('click', () => {
+      mobileList.classList.toggle('active');
+    });
+  </script>
+
+  </body>
+
 </html>

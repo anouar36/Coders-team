@@ -1,130 +1,289 @@
 :root{
   --primaryColor : #0A66C2 ;
-  --secondColor : #FFFFFF ;
+  --scondColor : #333 ;
+  --textColor : #555 ;
 }
-*{
-  padding: 0;
+* {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-.container{
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: var(--scondColor);
+  line-height: 1.6;
+}
+
+.profile-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Profile Container */
+.profile-container {
   display: grid;
-}
-header{
-  width:100%;
-  height: 72px;
-  text-align: center;
-  align-items: center;
-  background-color: var(--primaryColor);
-}
-.container .All{
-  display: grid;
-  gap: 40px;
-grid-template-rows: 1fr auto ;
-}
-.container .personal-info{
-  display : grid ;
-  border : 1px solid red ;
-  margin-top: 15px;
-  grid-template-columns:auto 1fr;
-}
-.container .personal-info .info{
-  display : grid ;
-  background-color: aqua;
-  grid-template-columns: 1fr auto;
-  grid-column: 2 span;
-  padding: 20px;
+  grid-template-columns: 1fr 2fr;
   gap: 20px;
-}
-.container .personal-info .slakAjmi{
-  display : grid ;
-  background-color: aqua;
-  grid-template-columns: 20% 80%;
-  height: 80vh;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
 }
 
-.container .personal-info .info .info-pic-name{
-  display : grid ;
-  grid-template-columns: auto 1fr auto;
-  width: fit-content;
-  border: 1px solid rgb(110, 100, 100);
-  column-gap: 20px;
-  /* grid-template-columns: 1fr 1fr auto ;   */
+/* Profile Header */
+.profile-header {
+  grid-column: 1 / span 2;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 20px;
+  position: relative; 
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.job-title {
+  font-size: 24px;
+  color: #333;
+}
+
+.location-rate {
+  font-size: 16px;
+  color: #777;
+  display: flex;
   align-items: center;
 }
-.container .personal-info .info .info-pic-name img{
-   border-radius: 50%;
-   width: 100px;
-}
-.container .personal-info .info .info-pic-name .user p , i{
- display:inline-block;
- padding-top: 10px;
-}
-.container .personal-info .info .info-shar{
-  border : 1px solid darkblue ;
-  width: fit-content;
-}
-.container .personal-info .lang-edu{
-  background-color: rgb(241, 241, 43);
-  padding: 10px;
-  display: grid;
-}
-.container .personal-info .libiti{
-  display: grid;
-  grid-template-rows: 20% 50% 30% ;
-  height: 80vh;
-}
-.container .personal-info .status{
-  background-color: rgb(41, 170, 116);
-}
-.container .personal-info .portfolio .likan{
-  padding-top: 20px;
-  padding-left: 20px;
-  background-color: rgb(103, 207, 214);
-  display: grid;
-  grid-template-columns: 1fr 1fr  ;
-}
-.container .personal-info .portfolio .likan div  {
-  width: 400px;
-  height: 200px;
-  padding-left: 10px;
-}
-.container .personal-info .portfolio .likan div a  {
-      display: block; 
-      text-align: center;
-      padding-top: 10px;
-      text-decoration: none;
-      font-size: 16px;
-    }
-.container .personal-info .portfolio .likan div  img {
-  width: 100%;
-  height: 100%;
+
+.icons {
+  margin-left: 10px;
 }
 
-.container .personal-info .skills{
+.share .fi {
+  width: 30px;
+  height: 30px;
+ font-size: 30px;
+ color: var(--primaryColor);
+}
+
+.job-success {
+  margin-top: 10px;
+  color: var(--primaryColor);
+}
+
+/* Header Options */
+.header-options {
+  display: flex;
+  align-items: center;
+  margin-left: auto; 
+}
+
+.header-icon {
+  width: 24px; 
+  height: 24px; 
+  margin-left: 10px; 
+  cursor: pointer; 
+}
+
+/* Left Sidebar (Languages, Education, Linked Accounts) */
+.sidebar-left {
+  grid-column: 1 / 2;
+}
+
+.languages, .education, .linked-accounts {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  color: var(--textColor);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primaryColor);
+}
+
+/* Main Content: Description, Portfolio, Skills */
+.main-content {
+  grid-column: 2 / 3;
+}
+
+.description {
+  margin-bottom: 20px;
   
-  background-color: rgb(241, 178, 233);
-  /* text-align: center; */
-  padding: 10px 40px;
 }
-.container .personal-info .skills button {
-  background-color: #0A66C2;
-  padding: 10px 60px;
-  border-radius: 5px;
+.description p {
+  margin-bottom: 20px;
+  color: var(--textColor);
 }
 
-.container .Certification{
-  display : grid ;
-  border : 1px solid green ;
+.portfolio {
+  margin-bottom: 20px;
+}
+
+.portfolio h2 {
+  margin-bottom: 20px; 
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
+  gap: 15px; 
+} 
+
+.portfolio-item {
+  background-color: #fff; 
+  border-radius: 8px; 
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); 
+  padding: 10px; 
+  text-align: center; 
+}
+
+.portfolio-image {
+  width: 100%; 
+  height: 150px; 
+  object-fit: cover; 
+  border-radius: 5px; 
+  margin-bottom: 10px; 
+}
+
+.portfolio-item h3 {
+  font-size: 18px;
+  margin-bottom: 5px; 
+}
+
+.portfolio-item p {
+  font-size: 14px; 
+  color: var(--textColor); 
+}
+
+
+.skills {
+  margin-bottom: 20px;
+}
+
+.skill-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-item {
+  margin-bottom: 10px;
+}
+
+.skill-bar {
+  background-color: var(--primaryColor);
+  height: 8px;
+  border-radius: 4px;
+}
+
+/* Certifications Section */
+.certifications {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.certification-item {
+  display: flex;
+  align-items: center;
   margin-bottom: 15px;
 }
-footer{
-  height: 72px;
-  align-items: center;
-  text-align: center;
-  background-color: var(--primaryColor);
+
+.certification-logo {
+  width: 50px; 
+  height: 50px; 
+  margin-right: 10px;
 }
+
+.certification-details {
+  flex-grow: 1; 
+}
+
+.certification-description {
+  color: var(--textColor);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .profile-container {
+      grid-template-columns: 1fr; 
+  }
+
+  .sidebar-left {
+      grid-column: 1; 
+  }
+
+  .main-content {
+      grid-column: 1; 
+  }
+
+  .profile-header {
+      flex-direction: column; 
+      align-items: flex-start; 
+  }
+
+  .header-options {
+      margin-top: 10px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-pic {
+      width: 80px; 
+      height: 80px; 
+  }
+
+  .job-title {
+      font-size: 20px; 
+  }
+
+  .location-rate {
+      font-size: 14px; 
+  }
+
+  h2 {
+      font-size: 18px; 
+  }
+
+  h3 {
+      font-size: 16px; 
+  }
+
+  .header-icon {
+      width: 20px; 
+      height: 20px; 
+  }
+
+  .certification-logo {
+      width: 40px; 
+      height: 40px; 
+  }
+}
+
