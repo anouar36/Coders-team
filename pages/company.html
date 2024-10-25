@@ -1,71 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
-    name="description"
-    content="A company specialized in providing innovative solutions in technology and software to develop businesses and enhance productivity."
-  />
-  <link rel="stylesheet" href="/assets/Stylesheets/company.css">
+      name="description"
+      content="A company specialized in providing innovative solutions in technology and software to develop businesses and enhance productivity."
+    />
+    <link rel="stylesheet" href="/assets/Stylesheets/company.css" />
     <title>Document</title>
-</head>
-<body>
-<nav>
+  </head>
+  <body>
+    <header>
+        <nav class="navbar">
+            <a type="refresh" class="logo">
+                <img src="/assets/images/CodeCareer Black (1).png" alt="Logo">        
+                    <ul class="nav-items">
+                        <li><a href="./index.html"></a>Home</li>
+                        <li><a href="./pages/company.html"></a>Companies</li>
+                        <li><a href="./pages/jobs.html"></a>Jobs</li>
+                        <li><a href="./pages/about.html"></a>About</li>
+                        <li><a href="./pages/contact.html"></a>Contact</li>
+                    </ul>
+            <div class="profil">
+                <a href="./pages/User-stories.html" class="profil">
+                <img src="/assets/images/Icons/Profil.png" alt="Profil-icon">
+                </a>
+                <a href="#">Sign in</a>
+            </div>
+        </nav>
+    </header>
 
-</nav>
-<section>
-    <div class="cart">
-    <div class="your-accounte">
-    <h2>Your accounte</h2>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis numquam, tempora et sed perferendis laboriosam itaque aliquid libero harum culpa, nemo quia possimus consequatur alias mollitia ad iure quasi dolor!</p>
-    <form>
-        <div>
-        <h3> First Name  </h3>
-        <input type="text" name="fname" placeholder="you first name">
-        </div>   
-        <div>
-        <h3> last name </h3>
-        <input type="text" name="LastName " placeholder="you last name">
-        </div>
-        <div>
-        <h3> Phone Number  </h3>
-        <input type="number" name="PhoneNumber" placeholder="you number">
-        </div>
-        <div>
-        <h3> Profesionl email </h3>
-        <input type="email" name="ProfesionalEamil" placeholder="you email"> 
-     </div>
-    </form>
-    <h2>The Company</h2>
-    <form>
-        <h3>  Name  </h3>
-        <input type="text" name="fname" placeholder="you name the Company">
-        <h3>Linkedin</h3>
-        <input type="url" name="Linkedin" placeholder="you Linkedin">
-        <h3>Website</h3>
-        <input type="url" name="Website" placeholder="youe Website">
-        <h3> First Name  </h3>
-        <input type="text" name="Profesionalamil" placeholder="you First Name ">
-        
-    </form>
-    <h2>Add you Jobs</h2>
-    <form>
-        <h3> Job Offer URL#1  </h3>
-        <input type="text" name="JOU " placeholder=" Add Job Offer URL#1">
-        <h3> Job Offer URL#1  </h3>
-        <input type="text" name="JOU " placeholder="Add Job Offer URL#2">
-        <h3> Job Offer URL#1  </h3>
-        <input type="text" name="JOU " placeholder="Add Job Offer URL#3">
-        <h3> Job Offer URL#1  </h3>
-        <input type="text" name="JOU " placeholder="Add Job Offer URL#4">
-        <label class="switch">
-        <input type="checkbox">
-        </label>
-</form>
-    
+    <!-- section  -->
+
+    <section>
+      <div class="cart">
+        <h1>company</h1>
+        <hr />
+        <form>
+          <div class="formul" id="formul2">
+            <div class="titel">
+              <h2>Your accounte</h2>
+            </div>
+            <div>
+              <label for="fname">First Name</label>
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="your first name"
+              />
+            </div>
+
+            <div>
+              <label for="lname">last name</label>
+              <input
+                type="text"
+                id="lname"
+                name="Last name "
+                placeholder="your last name"
+              />
+            </div>
+
+            <div>
+              <label for="Phonenumber"> Phone Number</label>
+              <input
+                type="number"
+                id="Phonenumber"
+                name="Phone number"
+                placeholder="your number"
+              />
+            </div>
+
+            <div>
+              <label for="">Profesionl email</label>
+              <input
+                type="email"
+                name="Profesional eamil"
+                placeholder="your email"
+              />
+            </div>
+          </div>
+
+          <div class="formul">
+            <h2 class="titel">The Company</h2>
+            <div>
+              <label for="">Name</label>
+              <input
+                type="text"
+                name="fname"
+                placeholder="your name the Company"
+              />
+            </div>
+
+            <div>
+              <label for="">Linkedin</label>
+              <input type="url" name="Linkedin" placeholder="your Linkedin" />
+            </div>
+
+            <div>
+              <label for="">Website</label>
+              <input type="url" name="Website" placeholder="your Website" />
+            </div>
+          </div>
+
+          <div class="formul">
+            <h2 class="titel">Add you Jobs</h2>
+            <div>
+              <label for="">Job Offer URL#1</label>
+              <input
+                type="text"
+                name="JOU "
+                placeholder=" Add Job Offer URL#1"
+              />
+            </div>
+
+            <div>
+              <label for="">Job Offer URL#2 </label>
+              <input
+                type="text"
+                name="JOU "
+                placeholder="Add Job Offer URL#2"
+              />
+            </div>
+
+            <div>
+              <label for="">Job Offer URL#3</label>
+              <input
+                type="text"
+                name="JOU "
+                placeholder="Add Job Offer URL#3"
+              />
+            </div>
+
+            <div>
+              <label for="">Job Offer URL#4</label>
+              <input
+                type="text"
+                name="JOU "
+                placeholder="Add Job Offer URL#4"
+              />
+            </div>
+
+            <div class="inputE">
+              <label class="switch"
+                >Do you agree to all <br />
+                <a href="">the terms?</a></label
+              >
+              <input type="checkbox" />
+            </div>
+
+            <div class="Submit">
+              <button type="submit">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
 
     
-</section>
-</body>
+        <footer>
+            <section class="categories">
+                <ul class="cat-codec">
+                    <li><h4>CodeCareer</h4></li>
+                    <li><h6>Profil</h6></li>
+                    <li><h6>About us</h6></li>
+                    <li><h6>Contact Us</h6></li>
+                    <li><h6>Companies</h6></li>
+                    <li><h6>Jobs</h6></li>
+                </ul>
+                <ul class="Emp">
+                    <li><h4>Employers</h4></li>
+                    <li><h6>Account</h6></li>
+                    <li><h6>Employer Center</h6></li>
+                </ul>
+                <ul class="info">
+                    <li><h4>Information</h4></li>
+                    <li><h6>help</h6></li>
+                    <li><h6>Guidelines</h6></li>
+                    <li><h6>Terms of Use</h6></li>
+                    <li><h6>Privacy & policy</h6></li>
+                    <li><h6>Cookie Consent Tool</h6></li>
+                    <li><h6>Security</h6></li>
+                </ul>
+                <ul class="Work-with-us">
+                    <li><h4>Work With Us</h4></li>
+                    <li><h6>Advertisers</h6></li>
+                    <li><h6>Careers</h6></li>
+                </ul>
+                <div class="social-media-icons">
+                    <a src="/assets/images/Icons/facebook icon.png" alt="Facebook" href="https://facebook.com/"></a>
+                    <a src="/assets/images/Icons/instagram.png" alt="Instagram" href="https://instagram.com/"></a>
+                    <a src="/assets/images/Icons/x.png" alt="X" href="https://x.com/"></a>
+                    <a src="/assets/images/Icons/linkedin.png" alt="Linkedin" href="https://www.linkedin.com/"></a>
+                    
+                </div>
+            </section>
+            <!----------------------------------------------------------Sous Footer---------------------------------------------------------------->
+            <section class="sous-footer">
+                <div class="logo">
+                    <img src="/assets/images/CodeCareer Black (1).png" alt="logo">
+                </div>
+                        <p>© 2024 CodeCareer. All Rights Reserved.</p>
+                    <button>
+                        <img src="/assets/images/Icons/internet.png" alt="Language">
+                        <p>English</p>
+                    </button>
+                    <img src="/assets/images/Icons/accesibility.png" alt="accesibility">
+                </section>
+        </footer>
+  </body>
 </html>
