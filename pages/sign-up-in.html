@@ -18,111 +18,82 @@
     <header>
     <nav class="navbar">
         <a type="refresh" class="logo">
-            <img src="assets/images/CodeCareer Black (1).png" alt="Logo">        
+            <img src="../assets/images/CodeCareer Black (1).png" alt="Logo">        
             <ul class="nav-items">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pages/company.html">Companies</a></li>
-                <li><a href="pages/jobs.html">Jobs</a></li>
-                <li><a href="pages/about.html">About</a></li>
-                <li><a href="pages/contact.html">Contact</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/company.html">Companies</a></li>
+                <li><a href="../pages/jobs.html">Jobs</a></li>
+                <li><a href="../pages/about.html">About</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
             </ul>
         <div class="profil">
             <a href="./pages/Profil.html" class="profil">
-            <img src="assets/images/Icons/Profil.png" alt="Profil-icon">
+            <img src="../assets/images/Icons/Profil.png" alt="Profil-icon">
             </a>
             <a href="pages/sign-up-in.html">Sign in</a>
-        </div>
-        <div class="burger-menu">
-            <img src="../assets/images/Icons/burger-bar.png" alt="Burger manu"></img>
         </div>
     </nav>
 </header>
     <!----------------------------------------------------------------main---------------------------------------------------------------->
 <main>
-    <div class="background-container">
-        <div class="white-background"></div>
-        <img src="assets/images/CodeCareer Black (1).png" alt="Logo" class="foreground-image">
-    </div>
     <!----------------------------------------------------------------Sign up---------------------------------------------------------------->
-    <section id="formulaire-sign-up">
-        <h1>Sign up</h1>
-        <div class="Sign-form">
-                <form>
-                    <h6>Full name</h6>
-                    <input type="text" placeholder="Enter your full name" name="name">
-                    <h6>Email</h6>
-                    <input type="email" placeholder="Enter your e-mail" name="e-mail">
-                    <h6>Password</h6>
-                    <input type="password" name="password">
-                    <h6>Confirm password</h6>
-                    <input type="number" placeholder="Enter your phone number" name="phone">
-                    <div class="submit-button">
-                    <button type="submit">Continue</button>
-                    </div>
-                </form>
-        </div>
-        <h2>Or</h2>
-        <div class="sign-email">
-            <button type="button">
-                <img src="assets/images/Icons/search.png" alt="Email Icon" class="icon">
-                <a href="https://gmail.com/">Continue with E-mail</a>
-            </button>
-        </div>
-        <div class="buttons">
-            <div class="sign-google">
-                <button type="button">
-                    <img src="assets/images/Icons/google.png" alt="Google Icon" class="icon">
-                    <a href="https://google.com/">Continue with Google</a>
-                </button>
-            </div>            
-            <div class="sign-facebook">
-                <button type="button">
-                    <img src="assets/images/Icons/facebook.png" alt="facebook Icon" class="icon">
-                    <a href="https://facebook.com/">Continue with Facebook</a>
-                </button>
-            </div>
-            </div>
-        </div>
-
-    </section>
-    <span class="divider"></span>
-    <section id="formulaire-sign-in">
-        <h1>Sign up</h1>
-        <div class="Sign-form">
-                <form>
-                    <h6>Email / Username</h6>
-                    <input type="email" placeholder="Enter your e-mail" name="e-mail">
-                    <h6>Password</h6>
-                    <input type="password" name="password">
-                    <div class="submit-button">
-                    <button type="submit">Connexion</button>
-                    </div>
-                </form>
-        </div>
-        <div class="buttons">
-            <h2>Or</h2>
-            <div class="sign-email">
-                <button type="button">
-                    <img src="assets/images/Icons/search.png" alt="Email Icon" class="icon">
-                    <a href="https://gmail.com/" alt="gmail">Continue with E-mail</a>
-                </button>
-            </div>
-            <div class="sign-google">
-                <button type="button">
-                    <img src="assets/images/Icons/google.png" alt="Google Icon" class="icon">
-                    <a href="https://google.com/">Continue with Google</a>
-                </button>
-            </div>            
-            <div class="sign-facebook">
-                <button type="button">
-                    <img src="assets/images/Icons/facebook.png" alt="facebook Icon" class="icon">
-                    <a href="https://facebook.com/" alt="Facebook">Continue with Facebook</a>
-                </button>
-            </div>
-            </div>
+    
+    <div class="form-container">
+        <!-- Section for Companies -->
+        <div class="section">
+            <h1>For <span>Companies</span></h1>
+            <p>Streamlined hiring setup: targeted profiles, automated screening, seamless integrations.</p>
+            <form>
+                <label for="business-email">Business Email</label>
+                <input type="email" id="business-email" placeholder="Enter your work email">
+    
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Password">
+    
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" placeholder="Confirm your password">
+    
+                <div>
+                    <input type="checkbox" id="remember-companies">
+                    <label for="remember-companies">Remember me</label>
+                </div>
+    
+                <button type="submit">Sign up</button>
+            </form>
         </div>
     
+        <!-- Section for Developers -->
+        <div class="section">
+            <h1>For <span>Developers</span></h1>
+            <p>Be part of a 23 million-strong community of developers.</p>
+            <form>
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" placeholder="Enter your last name">
+    
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" placeholder="Enter your first name">
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your e-mail">
+    
+                <label for="password-dev">Password</label>
+                <input type="password" id="password-dev" placeholder="Password">
+    
+                <label for="confirm-password-dev">Confirm Password</label>
+                <input type="password" id="confirm-password-dev" placeholder="Confirm your password">
+    
+                <div>
+                    <input type="checkbox" id="remember-developers">
+                    <label for="remember-developers">Remember me</label>
+                </div>
+    
+                <button type="submit">Sign up</button>
+            </form>
+        </div>
+    </div>
+    </div>
 </main>
+
 <!-----------------------------------------------------------------Footer----------------------------------------------------------------->
 <footer>
     <section class="categories">
@@ -154,24 +125,24 @@
             <li><h6>Careers</h6></li>
         </ul>
         <div class="social-media-icons">
-            <a src="assets/images/Icons/facebook icon.png" alt="Facebook" href="https://facebook.com/"></a>
-            <a src="assets/images/Icons/instagram.png" alt="Instagram" href="https://instagram.com/"></a>
-            <a src="assets/images/Icons/x.png" alt="X" href="https://x.com/"></a>
-            <a src="assets/images/Icons/linkedin.png" alt="Linkedin" href="https://www.linkedin.com/"></a>
+            <a src=".//assets/images/Icons/facebook icon.png" alt="Facebook" href="https://facebook.com/"></a>
+            <a src="../assets/images/Icons/instagram.png" alt="Instagram" href="https://instagram.com/"></a>
+            <a src=".//assets/images/Icons/x.png" alt="X" href="https://x.com/"></a>
+            <a src="../assets/images/Icons/linkedin.png" alt="Linkedin" href="https://www.linkedin.com/"></a>
             
         </div>
     </section>
     <!----------------------------------------------------------Sous Footer---------------------------------------------------------------->
     <section class="sous-footer">
         <div class="logo">
-            <img src="assets/images/CodeCareer Black (1).png" alt="logo">
+            <img src="../assets/images/CodeCareer Black (1).png" alt="logo">
         </div>
                 <p>© 2024 CodeCareer. All Rights Reserved.</p>
             <button>
-                <img src="assets/images/Icons/internet.png" alt="Language">
+                <img src="../assets/images/Icons/internet.png" alt="Language">
                 <p>English</p>
             </button>
-            <img src="assets/images/Icons/accesibility.png" alt="accesibility">
+            <img src="../assets/images/Icons/accesibility.png" alt="accesibility">
         </section>
 
 </footer>
