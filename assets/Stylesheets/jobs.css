@@ -1,10 +1,179 @@
-.jobslist{
-    background-color: aquamarine;
+/* jobs section */
+.search-frame {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    padding-block: 100px;
+    padding-inline: 300px;
+    border-radius: 30px;
 }
 
-.jobslist div{
-    background-color: blueviolet;
-display: inline-flex;
-flex-flow: row wrap;
-justify-content: space-between;
+.searchbar {
+    display: inline-flex;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: rgb(200, 191, 191);
+
+}
+
+.searchbar i {
+    padding-top: 3px;
+}
+
+.s-input-1 {
+    background-color: rgb(200, 191, 191);
+    border: none;
+}
+
+.line {
+    height: 20px;
+    border: 0.2px solid black;
+}
+
+.s-input-2 {
+    background-color: rgb(200, 191, 191);
+    border: none;
+    padding-left: 10px;
+}
+
+.searchbar button {
+    border: none;
+    background-color: rgb(23, 56, 223);
+    color: white;
+    border-radius: 35px;
+    font-size: 10px;
+}
+
+.jobslist h2 {
+    margin-left: 200px;
+    width: fit-content;
+    color: rgb(1, 72, 186);
+    border-bottom: 2px solid black;
+}
+
+.jobs-frame {
+    display: flex;
+}
+
+.jobslist {
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+}
+
+.job-card {
+    display: flex;
+    padding: 10px 200px 10px 10px;
+    flex-flow: column wrap;
+    border: 1px solid rgb(131, 173, 237);
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.card-header {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+
+}
+
+.card-header i {
+    padding-top: 20px;
+    padding-right: 20px;
+    width: fit-content;
+}
+
+.jobslist h1 {
+    width: 250px;
+}
+
+.jobslist img {
+    height: 40px;
+    border-radius: 50px;
+}
+
+
+.desc-father {
+    padding: 66px 100px 0px 0px;
+}
+
+.desc-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-name,
+.rate {
+    display: flex;
+}
+
+#star2 {
+    padding-top: 20px;
+    padding-left: 3px;
+}
+
+.job-description {
+    border: 1px solid rgb(131, 173, 237);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.job-description h1 {
+    color: blue;
+}
+
+.job-description img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+
+@media(max-width:500px) {
+    .search-frame {
+        background-color: gray;
+        display: inline-flex;
+        padding-block: 50px;
+        padding-left: 3px;
+        padding-right: 3px;
+        border-radius: 30px;
+    }
+
+    .jobs-frame {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .jobslist {
+        display: flex;
+        flex-direction: column;
+        padding-right: 0px;
+
+    }
+
+    .jobslist h2 {
+        margin-left: 160px;
+        width: fit-content;
+        color: rgb(1, 72, 186);
+        border-bottom: 2px solid black;
+    }
+
+    .job-card {
+        display: flex;
+        padding: 30px 200px 30px 30px;
+        flex-flow: column wrap;
+        /* grid-template-columns:60px ; */
+        border: 1px solid rgb(131, 173, 237);
+        border-radius: 20px;
+        margin-bottom: 10px;
+
+    }
+
+    .desc-father {
+        padding: 66px 0px 0px 0px;
+    }
+
+
+
+
 }
