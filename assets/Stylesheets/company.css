@@ -76,6 +76,7 @@ hr {
   height: 4px;
   background-color: #0a66c2;
   position: relative;
+  left: 250px;
   bottom: 19px;
   border-radius: 20px;
 }
@@ -166,123 +167,7 @@ input {
   background-color: #0a66c2;
 }
 
-/* Footer */
-footer {
-  background-color: #0a66c2;
-  
-  padding: 40px;
-  margin-top: 20px;
-  margin-left: -10px;
-  color: #333;
-  width: 1190px;
-  height: 390px;
-  font-size: 14px;
-}
 
-.categories {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 0 20px;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-.categories ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.categories h4 {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-  color: #000;
-}
-
-.categories h6 {
-  font-size: 0.9rem;
-  margin-bottom: 8px;
-  color: #f7f7f7;
-}
-
-.categories h6 a {
-  text-decoration: none;
-  color: #666;
-  transition: color 0.3s ease;
-}
-
-.categories h6 a:hover {
-  color: #007bff;
-}
-.social-media-icons {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.social-media-icons a {
-  margin: 0 10px;
-  display: inline-block;
-}
-
-.social-media-icons img {
-  width: 25px;
-  height: 25px;
-}
-
-/* Sous-footer */
-.sous-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-  margin: 0px;
-  margin-bottom: 0;
-  position: relative;
-  right: 40px;
-  width: 101.5%;
-  background-color: #fff;
-  border-bottom: 1px solid #eee;
-  font-size: 16px;
-}
-.sous-footer .logo img {
-  height: 40px;
-}
-
-.sous-footer p {
-  margin-top: 10px;
-  margin-bottom: 5px;
-}
-
-.sous-footer button {
-  display: inline-flex;
-  align-items: center;
-  background: none;
-  border: none;
-  font-size: 1rem;
-  color: #333;
-  margin-right: 20px;
-  cursor: pointer;
-}
-
-.sous-footer button img {
-  width: 18px;
-  height: 18px;
-  margin-right: 5px;
-}
-
-.sous-footer button p {
-  margin: 0;
-}
-
-.sous-footer img[alt="accesibility"] {
-  width: 18px;
-  height: 18px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
 @media (max-width:700px) {
   .Submit button {
     position: relative;
@@ -315,6 +200,15 @@ footer {
 }
 .formul{
   width: 135%;
+}
+hr {
+  width: 250px;
+  height: 4px;
+  background-color: #0a66c2;
+  position: relative;
+  left: 30px;
+  bottom: 0px;
+  border-radius: 20px;
 }
 
 }
